@@ -1,0 +1,196 @@
+.footer {
+  background-color: $black;
+  padding-bottom: 4.5rem;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+
+  &-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90rem;
+    width: 100%;
+    position: relative;
+
+    input {
+      padding-bottom: 0.8rem;
+      width: 100%;
+      background-color: $black;
+      border-bottom: 0.1rem solid #ebebeb;
+      outline: none;
+      border-right: none;
+      border-top: none;
+      border-left: none;
+    }
+  }
+
+  &-sub {
+    position: absolute;
+    color: $green;
+    right: 0;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 16.4rem;
+  }
+
+  &-columns {
+    width: 50%;
+  }
+
+  &-columns-left {
+    max-width: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+  }
+
+  &-columns-right {
+    max-width: 55rem;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+  }
+
+  &-title {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: 4.2rem;
+    display: flex;
+    align-items: center;
+    color: $white;
+    span {
+      margin-right: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: $green;
+      display: inline-block;
+    }
+  }
+
+  &-info {
+    color: $white;
+  }
+
+  &-text {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  &-social {
+    margin-top: 4.4rem;
+
+    a {
+      color: $green;
+      font-size: 2.5rem;
+      margin-right: 1.6rem;
+    }
+  }
+
+  &-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &-content {
+    color: $white;
+    margin-left: 1.5rem;
+    span {
+      line-height: 2.4rem;
+    }
+  }
+
+  &-copy {
+    margin-top: 9.5rem;
+    color: $white;
+    text-align: center;
+    color: #fefeff;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-list {
+      gap: 7.4rem;
+    }
+
+    &-logo {
+      margin-right: 1rem;
+    }
+
+    &-columns-left {
+      gap: 6rem;
+    }
+
+    &-columns-right {
+      gap: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-list {
+      flex-direction: column;
+    }
+
+    &-columns-left {
+      max-width: none;
+    }
+
+    &-columns-right {
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &-main {
+      flex-direction: column;
+    }
+
+    &-list {
+      gap: 4.4rem;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
+
+    &-logo {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    &-img {
+      width: 7rem;
+      height: 7rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-columns-left {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &-columns {
+      width: 100%;
+    }
+
+    &-columns-right {
+      flex-direction: column;
+    }
+
+    &-copy {
+      margin-top: 4rem;
+    }
+  }
+}

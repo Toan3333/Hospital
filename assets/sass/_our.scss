@@ -1,0 +1,66 @@
+.our {
+  background-color: $green;
+  padding-top: 7.5rem;
+  padding-bottom: 10rem;
+
+  &-box {
+    background-color: $white;
+    padding: 0 1.2rem 0 1.2rem;
+  }
+
+  &-img {
+    margin-top: -6rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  &-list {
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+
+  &-content {
+    text-align: center;
+    padding: 3.4rem 0;
+  }
+
+  &-offer {
+    color: $green;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &-social {
+    a {
+      color: $black;
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-social {
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &-list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 8rem;
+    }
+
+    &-box {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.get {
+  background-color: $white;
+  padding-bottom: 10rem;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  &-left {
+    max-width: 70rem;
+    width: 100%;
+  }
+
+  &-form {
+    width: 100%;
+    margin-bottom: 3.5rem;
+
+    input {
+      width: 100%;
+      padding: 2.8rem 2rem;
+      border: 0.1rem solid $green;
+
+      &::placeholder {
+        color: $green;
+      }
+    }
+
+    textarea {
+      padding: 6.4rem 3rem;
+      border: 0.1rem solid $green;
+      width: 100%;
+      color: $green;
+    }
+  }
+
+  &-btn {
+    margin-top: 8rem;
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-main {
+      gap: 2rem;
+    }
+
+    &-left {
+      width: 100%;
+    }
+
+    &-right {
+      width: 100%;
+    }
+
+    &-form {
+      input {
+        padding: 2rem 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 4rem;
+    &-main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+    }
+
+    &-right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  font-size: 1.7rem;
+  font-family: $font;
+  color: $black;
+  background-color: #fcfcfc;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
